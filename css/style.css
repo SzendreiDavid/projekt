@@ -6,6 +6,63 @@ body {
     color: #222;
 }
 
+.header2 {
+    width: 100%;
+    height: 60px;
+    background-color: #e5d9cd;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.header-sep {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+a:hover {
+    color: #9d9f7b;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #9d9f7b;
+    left: 0;
+    bottom: -3px;
+    transition: 0.6s;
+}
+.links a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+.links a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #9d9f7b;
+    color: white;
+}
+
+.links a {
+    color: black;
+}
+
 header {
     background: #e5d9cd;
     padding: 2rem 1rem;
