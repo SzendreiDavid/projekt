@@ -1,8 +1,7 @@
 body {
-    background-color: #FFE8D5;
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #BBA58F;
+    background-color: #E8C9B2;
     color: #222;
 }
 
@@ -46,7 +45,7 @@ main {
 }
 
 .info-box {
-    background: #fff;
+    background: #9d9f7b;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
@@ -71,4 +70,22 @@ footer {
     .hero-text {
         font-size: 1rem;
     }
+}
+
+.map-responsive {
+    position: relative;
+    padding-bottom: 37.5%;
+    height: 0;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
