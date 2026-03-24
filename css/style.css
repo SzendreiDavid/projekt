@@ -38,6 +38,7 @@ a:hover {
     bottom: -3px;
     transition: 0.6s;
 }
+
 .links a {
     text-decoration: none;
     color: #333;
@@ -47,6 +48,7 @@ a:hover {
 .links a:hover::after {
     width: 100%;
 }
+
 .links a {
     padding: 8px 12px;
     border-radius: 8px;
@@ -134,4 +136,42 @@ footer {
     }
 }
 
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
 
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.section {
+    padding: 100px 20px;
+}
+
+.card-custom {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
+    height: 100%;
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
