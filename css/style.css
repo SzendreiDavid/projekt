@@ -12,6 +12,8 @@ body {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: fixed;
+    top: 0;
 }
 
 .header-sep {
@@ -117,11 +119,24 @@ main {
     border: 0;
 }
 
-footer {
+.footer {
     text-align: center;
     padding: 2rem 1rem;
-    color: #777;
+    color: black;
     font-size: 0.9rem;
+    height: 80px;
+    background-color: #e5d9cd;
+}
+
+hr  {
+    margin: auto;
+    width: 45%;
+    height: 5px;
+    background-color: #2e7d32;
+}
+
+.footer-text {
+    font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -134,4 +149,12 @@ footer {
     }
 }
 
+.mezes_mustar {
+    margin: 120px 0px 30px 150px;
+}
+
+.mezes_mustaros_img {
+    height: 250px;
+    width: 370px;
+}
 
