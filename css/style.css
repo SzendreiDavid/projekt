@@ -106,8 +106,6 @@ main {
     text-align: justify;
 }
 
-<<<<<<< HEAD
-=======
 .info-box {
     background: #9d9f7b;
     padding: 2rem;
@@ -175,7 +173,7 @@ hr  {
     height: 250px;
     width: 370px;
 }
->>>>>>> 7bf57bdeaeddc1dc1d66172b3c25d31b84a49402
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74');
