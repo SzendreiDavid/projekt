@@ -5,6 +5,8 @@ body {
     color: #222;
 }
 
+
+/* Header */
 .header {
     width: 100%;
     height: 70px;
@@ -64,11 +66,23 @@ a:hover {
     color: black;
 }
 
+/* Main */
 main {
     max-width: 900px;
     margin: 4rem auto;
     padding: 0 1.5rem;
     text-align: center;
+}
+
+.info-box {
+    background: #9d9f7b;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
+    line-height: 1.7;
+
+    text-align: justify;
 }
 
 .hero-title {
@@ -84,56 +98,10 @@ main {
 
 .hero-text {
     font-size: 1.2rem;
-    color: #555;
+    color: #000;
     line-height: 1.8;
     margin-bottom: 2.5rem;
     text-align: justify;
-}
-
-.info-box {
-    background: #9d9f7b;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    text-align: justify;
-}
-
-.map-responsive {
-    position: relative;
-    padding-bottom: 37.5%;
-    height: 0;
-    overflow: hidden;
-    width: 80%;
-    max-width: 800px;
-}
-
-.map-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    color: #777;
-    font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-text {
-        font-size: 1rem;
-    }
 }
 
 .hero {
@@ -153,10 +121,11 @@ footer {
 
 .section {
     padding: 100px 20px;
+    margin-top: -60px;
 }
 
 .card-custom {
-    background: rgba(255, 255, 255, 0.04);
+    background: #e5d9cd;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 15px;
     padding: 30px;
@@ -172,6 +141,25 @@ footer {
 
 .card-icon {
     font-size: 40px;
-    color: #00d4ff;
+    color: #9d9f7b;
     margin-bottom: 15px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
 }
