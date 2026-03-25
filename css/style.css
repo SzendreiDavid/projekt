@@ -151,14 +151,115 @@ hr  {
     }
 }
 
+/* Csirkemell */
+
+.mezes_mustaros {
+    width: 1000px;
+    height: 700px;
+}
+
 .mezes_mustar {
     margin: 120px 0px 30px 150px;
 }
 
 .mezes_mustaros_img {
-    height: 250px;
-    width: 370px;
+    height: 290px;
+    width: 300px;
 }
+
+.csirkemell {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+.food_title {
+    width: 280px;
+    height: 50px;
+    margin-top: 80px;
+    margin-bottom: -70px;
+    margin-left: 770px;
+    background-color: #F9E8DA;
+    border: 1px black solid;
+    padding-top: 11px;
+    padding-left: 15px;
+}
+
+.food_title2 {
+    font-size: 20px;
+}
+
+/* Csirkemell Hozzávalók */
+
+.hozzavalok {
+    width: 300px;
+    height: 335px;
+    background-color: #F9DCC3;
+    border: 1px black solid;
+}
+
+.hozzavalok_box {
+    height: 40px;
+    background-color: #F9E8DA;
+    width: 200px;
+    text-align: center;
+    margin-left: 53px;
+    margin-bottom: -10px;
+    border: 1px black solid;
+}
+
+.hozzavalok_move {
+    margin-left: 500px;
+    margin-top: -330px;
+}
+
+.hozzavalok_text {
+    font-size: 24px;
+}
+
+.hozzavalok_list {
+    list-style-type: "-";
+    margin-left: -11px;
+}
+
+.talalas {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+/* Csirkemell Elkészítés */
+
+.elkeszites_move {
+    margin-left: 900px;
+    margin-top: -370px;
+}
+
+.elkeszites {
+    background-color: #F9DCC3;
+    width: 700px;
+    height: 235px;
+    border: 1px black solid;
+}
+
+.elkeszites_box {
+    height: 40px;
+    background-color: #F9E8DA;
+    width: 200px;
+    text-align: center;
+    margin-left: 500px;
+    margin-bottom: -10px;
+    border: 1px black solid;
+}
+
+.elkeszites_text {
+    font-size: 24px;
+}
+
+.elkeszites_bold  {
+    font-weight: bold;
+}
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74');
