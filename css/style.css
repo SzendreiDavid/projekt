@@ -14,6 +14,8 @@ body {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: fixed;
+    top: 0;
 }
 
 .header-sep {
@@ -104,6 +106,76 @@ main {
     text-align: justify;
 }
 
+<<<<<<< HEAD
+=======
+.info-box {
+    background: #9d9f7b;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.map-responsive {
+    position: relative;
+    padding-bottom: 37.5%;
+    height: 0;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: black;
+    font-size: 0.9rem;
+    height: 80px;
+    background-color: #e5d9cd;
+}
+
+hr  {
+    margin: auto;
+    width: 45%;
+    height: 5px;
+    background-color: #2e7d32;
+}
+
+.footer-text {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+}
+
+.mezes_mustar {
+    margin: 120px 0px 30px 150px;
+}
+
+.mezes_mustaros_img {
+    height: 250px;
+    width: 370px;
+}
+>>>>>>> 7bf57bdeaeddc1dc1d66172b3c25d31b84a49402
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74');
