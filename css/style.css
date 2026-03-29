@@ -170,6 +170,7 @@ hr  {
 .mezes_mustaros {
     width: 1000px;
     height: 700px;
+    margin-bottom: -110px;
 }
 
 .mezes_mustar {
@@ -187,7 +188,7 @@ hr  {
     margin-top: 5px;
 }
 
-.food_title {
+.mezes_title {
     width: 280px;
     height: 50px;
     margin-top: 80px;
@@ -199,7 +200,7 @@ hr  {
     padding-left: 15px;
 }
 
-.food_title2 {
+.mezes_title2 {
     font-size: 20px;
 }
 
@@ -222,7 +223,7 @@ hr  {
     border: 1px black solid;
 }
 
-.hozzavalok_move {
+.mezes_hozzavalok_move {
     margin-left: 500px;
     margin-top: -330px;
 }
@@ -244,7 +245,7 @@ hr  {
 
 /* Csirkemell Elkészítés */
 
-.elkeszites_move {
+.mezes_mustaros_move {
     margin-left: 900px;
     margin-top: -370px;
 }
@@ -256,7 +257,7 @@ hr  {
     border: 1px black solid;
 }
 
-.elkeszites_box {
+.mezes_mustaros_box {
     height: 40px;
     background-color: #F9E8DA;
     width: 200px;
@@ -273,6 +274,158 @@ hr  {
 .elkeszites_bold  {
     font-weight: bold;
 }
+
+/* Mogyorós Sütemény Elkészítés */
+
+.mogyoros_sutemeny_box {
+    height: 40px;
+    background-color: #F9E8DA;
+    width: 200px;
+    text-align: center;
+    border: 1px black solid;
+    margin-bottom: -10px;
+    margin-left: 145px;
+}
+
+.mogyoros_elkeszites {    
+    background-color: #F9DCC3;
+    width: 700px;
+    height: 235px;
+    border: 1px black solid;
+    margin-left: 145px;
+}
+
+/* Mogyorós Sütemény Hozzávalók */
+
+.mogyoros_hozzavalok_move {
+    margin-left: 900px;
+    margin-top: -266px;
+}
+
+.teszta {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+.diszites {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+/* Mogyorós Sütemény */
+
+.mogyoros_title {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-left: 770px;
+    background-color: #F9E8DA;
+    border: 1px black solid;
+    padding-top: 11px;
+    padding-left: 15px;
+}
+
+.mogyoros_title2 {
+    font-size: 20px;
+}
+
+.mogyoros_img {
+    height: 290px;
+    width: 300px;
+}
+
+/* Big Mac Saláta*/
+
+.big_mac_salata {
+    width: 1000px;
+    height: 700px;
+    margin-bottom: -110px;
+}
+
+.big_mac {
+    margin: 120px 0px 30px 150px;
+}
+
+.big_mac_salata_img {
+    height: 290px;
+    width: 300px;
+}
+
+.alap {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+.ontet {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+.salata_title {
+    width: 280px;
+    height: 50px;
+    margin-top: 80px;
+    margin-bottom: -70px;
+    margin-left: 770px;
+    background-color: #F9E8DA;
+    border: 1px black solid;
+    padding-top: 11px;
+    padding-left: 15px;
+}
+
+.salata_title2 {
+    font-size: 20px;
+}
+.salata_hozzavalok_move {
+    margin-left: 500px;
+    margin-top: -330px;
+}
+.simitasok {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+.big_mac_salata_move {
+    margin-left: 900px;
+    margin-top: -370px;
+}
+.big_mac_salata_box {
+    height: 40px;
+    background-color: #F9E8DA;
+    width: 200px;
+    text-align: center;
+    margin-left: 500px;
+    margin-bottom: -10px;
+    border: 1px black solid;
+}
+
+.salata_hozzavalok {
+    width: 300px;
+    height: 335px;
+    background-color: #F9DCC3;
+    border: 1px black solid;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.salata_elkeszites {
+    background-color: #F9DCC3;
+    width: 700px;
+    height: 235px;
+    border: 1px black solid;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.salata_elkeszites::-webkit-scrollbar {
+  display: none;
+}
+
 
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
