@@ -512,5 +512,10 @@ footer {
 }
 
 .space{
-    padding: 1rem 9rem;
+    padding: 4rem;
+}
+
+.napok{
+    list-style-type: none;
+    font-size: 2rem;
 }
