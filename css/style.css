@@ -1,3 +1,9 @@
+
+/* Zoé */
+
+/* ==========================================================================
+   ALAP
+   ========================================================================== */
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -5,24 +11,27 @@ body {
     color: #222;
 }
 
-
-/* Header */
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
 .header {
     width: 100%;
     height: 70px;
     background-color: #e5d9cd;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 .header-sep {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
+/* ==========================================================================
+   LINKEK
+   ========================================================================== */
 a {
     text-decoration: none;
     color: burlywood;
@@ -30,6 +39,14 @@ a {
 
 a:hover {
     color: #9d9f7b;
+}
+
+.links a {
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: black;
+    transition: 0.3s;
 }
 
 .links a::after {
@@ -40,23 +57,7 @@ a:hover {
     background: #9d9f7b;
     left: 0;
     bottom: -3px;
-    transition: 0.6s;
-}
-
-.links a {
-    text-decoration: none;
-    color: #333;
-    position: relative;
-}
-
-.links a:hover::after {
-    width: 100%;
-}
-
-.links a {
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .links a:hover {
@@ -64,107 +65,344 @@ a:hover {
     color: white;
 }
 
-.links a {
-    color: black;
+.links a:hover::after {
+    width: 100%;
 }
 
-/* Main */
+/* ==========================================================================
+   MAIN
+   ========================================================================== */
 main {
     max-width: 900px;
-    margin: 4rem auto;
+    margin: 100px auto 40px;
     padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   INFO BOX
+   ========================================================================== */
+.info-box {
+    background: #9d9f7b;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: justify;
+    color: white;
+}
+
+/* ==========================================================================
+   SECTION HEADER
+   ========================================================================== */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   GRID + CARD
+   ========================================================================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    background: #e5d9cd;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
     text-align: center;
 }
 
-.info-box {
+.card-content h3 {
+    margin: 0;
+}
+
+/* ==========================================================================
+   MOTIVÁCIÓ
+   ========================================================================== */
+.motivation-box {
     background: #9d9f7b;
-    padding: 2rem;
+    border-left: 5px solid #2e7d32;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    font-size: 1.1rem;
-    line-height: 1.7;
-
-    text-align: justify;
+    padding: 30px;
+    text-align: center;
+    margin: 60px 0;
+    color: white;
 }
 
-.hero-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 2rem;
+.quote {
+    font-size: 1.3rem;
+    font-style: italic;
 }
 
-.highlight {
+.author {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   BMI
+   ========================================================================== */
+.bmi-container {
+    background: #e5d9cd;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.bmi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bmi-table th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #2e7d32;
+}
+
+.bmi-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.status-normal {
     color: #2e7d32;
+    font-weight: bold;
 }
 
-.hero-text {
-    font-size: 1.2rem;
-    color: #000;
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
-    text-align: justify;
+.status-warn {
+    color: #c2a045;
 }
 
-.info-box {
-    background: #9d9f7b;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    text-align: justify;
+.status-alert {
+    color: #a64444;
 }
 
-.map-responsive {
-    position: relative;
-    padding-bottom: 37.5%;
-    height: 0;
+/* ==========================================================================
+   HERO SPLIT
+   ========================================================================== */
+.hero-split {
+    background-color: #065f46;
     overflow: hidden;
-    width: 80%;
-    max-width: 800px;
+    margin-bottom: 4rem;
+    border-radius: 0 0 40px 40px;
 }
 
-.map-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero-image-col {
+    position: relative;
+    min-height: 500px;
+}
+
+.hero-img {
     width: 100%;
     height: 100%;
-    border: 0;
+    object-fit: cover;
 }
 
+.hero-text-col {
+    background: linear-gradient(135deg, #10b981 0%, #065f46 100%);
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================================================
+   BADGE + BUTTON
+   ========================================================================== */
+.badge-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 15px;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btn-main {
+    display: inline-block;
+    background: #ffd700;
+    color: #065f46;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CÍMEK
+   ========================================================================== */
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #10b981;
+    border-bottom: 3px solid #10b981;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+/* ==========================================================================
+   GYAKORLAT KÁRTYÁK
+   ========================================================================== */
+.custom-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ==========================================================================
+   PROGRESS BAR
+   ========================================================================== */
+.custom-progress {
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-progress::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #4ade80, #10b981);
+}
+
+.level1::after {
+    width: 33%;
+}
+
+.level2::after {
+    width: 66%;
+}
+
+.level3::after {
+    width: 100%;
+}
+
+/* ==========================================================================
+   EDZÉSTERV KÁRTYÁK
+   ========================================================================== */
+.plan-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    border-top: 6px solid #ccc;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: scale(1.03);
+}
+
+.plan-card ul {
+    padding: 0;
+}
+
+.plan-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* SZINTEK */
+.beginner {
+    border-top-color: #28a745;
+}
+
+.advanced {
+    border-top-color: #ffc107;
+}
+
+.pro {
+    border-top-color: #dc3545;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 768px) {
+    .hero-image-col {
+        min-height: 300px;
+    }
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 .footer {
     text-align: center;
     padding: 2rem 1rem;
-    color: black;
-    font-size: 0.9rem;
-    height: 80px;
     background-color: #e5d9cd;
+    margin-top: 40px;
 }
 
-hr  {
-    margin: auto;
-    width: 45%;
-    height: 5px;
+/* ==========================================================================
+   EGYÉB
+   ========================================================================== */
+hr {
+    margin: 20px auto;
+    width: 50%;
+    height: 3px;
     background-color: #2e7d32;
+    border: none;
 }
 
-.footer-text {
-    font-size: 20px;
-}
-
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
 @media (max-width: 600px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-text {
-        font-size: 1rem;
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
 
+/* Dávid */
 /* Csirkemell */
 
 .mezes_mustaros {
@@ -182,6 +420,7 @@ hr  {
     width: 300px;
 }
 
+/* Géza */
 .csirkemell {
     font-weight: bold;
     margin-left: -20px;
