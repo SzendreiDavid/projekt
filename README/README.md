@@ -9,3 +9,9 @@
 
 | Vezetéknév | Keresztnév | Szerep |
 ------------------------------------
+|  Szendrei   |    Dávid   | Projekt vezető|
+-
+|  Molnár    |    Géza    | Projekt tag|
+-
+|  Kriván     | Zoé      | Projekt tag|
+-
