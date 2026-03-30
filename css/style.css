@@ -165,6 +165,51 @@ hr  {
     }
 }
 
+.container {
+    margin-top: 100px;
+    width: 1400px;
+    height: 1000px;
+}
+
+.termekek1 {
+    width: 1100px;
+    height: 300px;
+    margin: auto;
+}
+
+.termek1 {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+.termek2 {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.termek3 {
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-top: -300px;
+}
+
+.bg {
+    background-color: #fff;
+}
+
+.form-select {
+    width: 150px;
+}
+
+.cart {
+    width: 50px;
+    height: 40px;
+    background-color: #fff;
+}
+
 /* Csirkemell */
 
 .mezes_mustaros {
