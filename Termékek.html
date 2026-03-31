@@ -14,23 +14,112 @@
 
     </div>
 
-    <div class="header links">
-        <h3>
+    <div class="header">
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="links" id="navLinks">
             <a href="index.html">Főoldal</a>
-            <span class="header-sep">|</span>
             <a href="Rólam.html">Rólam</a>
-            <span class="header-sep">|</span>
             <a href="Idopontok.html">Időpontfoglaló</a>
-            <span class="header-sep">|</span>
             <a href="Edzéstervek.html">Edzéstervek</a>
-            <span class="header-sep">|</span>
             <a href="Receptek.html">Receptek</a>
-            <span class="header-sep">|</span>
             <a href="Termékek.html">Termékek</a>
-        </h3>
+        </div>
+
     </div>
 
     <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/termekek_img/kesztyu.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Edzős Kesztyű</h5>
+                        <p class="card-text"></p>
+                        <div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="selected">Mennyiség</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+
+                            </select>
+                        </div>
+                        <button class="cart" id="btnTermek1"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal"data-bs-target="#Kesztyu">
+                            Termék Leírás
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/termekek_img/feherje.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Csokis Fehérje (BioTech USA)</h5>
+                        <p class="card-text"></p>
+                        <div>
+                            <select class="form-select" aria-label="Size 3 select example">
+                                <option value="selected">Mennyiség</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <button class="cart" id="btnTermek2"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal"data-bs-target="#Feherje">
+                            Termék Leírás
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="IMG/termekek_img/kulacs.png" class="card-img-top" alt="...">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">Kulacs</h5>
+                        <p class="card-text"></p>
+                        <div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="">Mennyiség</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <button class="cart" id="btnTermek3"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal"data-bs-target="#Kulacs">
+                            Termék Leírás
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -47,9 +136,17 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
                             </select>
                         </div>
-                        <button class="cart"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button class="cart" id="btnTermek4"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal"data-bs-target="#Csukloszorito">
+                            Termék Leírás
+                        </button>
                     </div>
                 </div>
             </div>
@@ -67,9 +164,17 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
                             </select>
                         </div>
-                        <button class="cart"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button class="cart" id="btnTermek5"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal"data-bs-target="#Kesztyu">
+                            Termék Leírás
+                        </button>
                     </div>
                 </div>
             </div>
@@ -78,7 +183,7 @@
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body h-100">
                         <h5 class="card-title">... Vitamin</h5>
-                        <p class="card-text">lorem</p>
+                        <p class="card-text"></p>
                         <div>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="">Mennyiség</option>
@@ -87,80 +192,233 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
                             </select>
                         </div>
-                        <button class="cart"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button class="cart" id="btnTermek6"><img src="img/termekek_img/cart.png" alt=""></button>
+                        <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal"data-bs-target="#Kesztyu">
+                            Termék Leírás
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <br>
+    </div>
 
-         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Edzős Kesztyű</h5>
-                        <p class="card-text"></p>
-                        <div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="selected">Mennyiség</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <button class="cart"><img src="img/termekek_img/cart.png" alt=""></button>
-                    </div>
+
+
+
+    <div class="modal fade" id="Kesztyu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edzőkesztyűk</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Egészséges Táplálkozás Könyv</h5>
-                        <p class="card-text"></p>
-                        <div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="selected">Mennyiség</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <button class="cart"><img src="img/termekek_img/cart.png" alt=""></button>
-                    </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>50% nejlon, 40% poliuretán, 10% elasztán</li>
+                        <li>Legfeljebb 30 fokon mosható.</li>
+                        <li>Szárítógép használata nem javasolt.</li>
+                        <li>FehérÍtővel nem kezelhető.</li>
+                        <li>Legfeljebb 110 fokon vasalható.</li>
+                        <li>Száraz tisztítás nem javasolt.</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body h-100">
-                        <h5 class="card-title">... Vitamin</h5>
-                        <p class="card-text">lorem</p>
-                        <div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="">Mennyiség</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <button class="cart"><img src="img/termekek_img/cart.png" alt=""></button>
-                    </div>
+                <div class="modal-footer">
+                    <p class="me-auto">Ár: 13.890Ft</p>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Bezárás</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
+
+        <div class="modal fade" id="Feherje" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Csokis Fehérje (BioTech)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Gyors felszívódású fehérjeforrás</li>
+                        <li>Finom, krémes csokoládé íz</li>
+                        <li>Gluténmentes, így a gluténérzékenyek is fogyaszthatják</li>
+                        <li>Nem tartalmaz hozzáadott cukrot vagy tartósítószert</li>
+                        <li>Kiváló aminosav forrás</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <p class="me-auto">Ár: 8.800Ft</p>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <div class="modal fade" id="Kulacs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edzőkesztyűk</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                    <li>Antibakteriális műanyag kulacs hordszíjjal</li>
+                    <li>600 ml.</li>
+                    <li>ISO 22196 szabványnak megfelel.</li>
+                    <li>Nem alkalmas szénsavas italok tárolására.</li>
+                    <li>Méret: 65×212 mm</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <div class="modal fade" id="Csukloszorito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edzőkesztyűk</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>50% nejlon, 40% poliuretán, 10% elasztán</li>
+                        <li>Legfeljebb 30 fokon mosható.</li>
+                        <li>Szárítógép használata nem javasolt.</li>
+                        <li>FehérÍtővel nem kezelhető.</li>
+                        <li>Legfeljebb 110 fokon vasalható.</li>
+                        <li>Száraz tisztítás nem javasolt.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <div class="modal fade" id="Kesztyu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edzőkesztyűk</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>50% nejlon, 40% poliuretán, 10% elasztán</li>
+                        <li>Legfeljebb 30 fokon mosható.</li>
+                        <li>Szárítógép használata nem javasolt.</li>
+                        <li>FehérÍtővel nem kezelhető.</li>
+                        <li>Legfeljebb 110 fokon vasalható.</li>
+                        <li>Száraz tisztítás nem javasolt.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastTermek1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Termék a kosárban!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Kesztyű hozzá adva a kosárhoz!
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastTermek2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Termék a kosárban!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Fehérje hozzá adva a kosárhoz!
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastTermek3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Termék a kosárban!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Kulacs hozzá adva a kosárhoz!
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastTermek4" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Termék a kosárban!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                A termékét elhelyeztük a kosárba!
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastTermek5" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Termék a kosárban!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                A termékét elhelyeztük a kosárba!
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastTermek6" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Termék a kosárban!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                A termékét elhelyeztük a kosárba!
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -168,9 +426,62 @@
         <hr>
     </footer>
 
+    <script>
+        document.getElementById("btnTermek1").addEventListener("click", function () {
+            const toastElement = document.getElementById("toastTermek1");
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        });
+    </script>
+
+    <script>
+        document.getElementById("btnTermek2").addEventListener("click", function () {
+            const toastElement = document.getElementById("toastTermek2");
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        });
+    </script>
+
+    <script>
+        document.getElementById("btnTermek3").addEventListener("click", function () {
+            const toastElement = document.getElementById("toastTermek3");
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        });
+    </script>
+
+    <script>
+        document.getElementById("btnTermek4").addEventListener("click", function () {
+            const toastElement = document.getElementById("toastTermek4");
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        });
+    </script>
+
+    <script>
+        document.getElementById("btnTermek5").addEventListener("click", function () {
+            const toastElement = document.getElementById("toastTermek5");
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        });
+    </script>
+
+    <script>
+        document.getElementById("btnTermek6").addEventListener("click", function () {
+            const toastElement = document.getElementById("toastTermek6");
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+
 </body>
 
 </html>
