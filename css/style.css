@@ -69,12 +69,63 @@ a:hover {
     width: 100%;
 }
 
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+  
+    .menu-toggle {
+        display: block;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: #e5d9cd;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .links a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .header-sep {
+        display: none;
+    }
+}
+
 /* ==========================================================================
    MAIN
    ========================================================================== */
 main {
     max-width: 900px;
-    margin: 100px auto 40px;
+    margin: auto;
     padding: 0 1.5rem;
 }
 
@@ -381,10 +432,10 @@ main {
    FOOTER
    ========================================================================== */
 .footer {
+
     text-align: center;
     padding: 2rem 1rem;
     background-color: #e5d9cd;
-    margin-top: 40px;
 }
 
 /* ==========================================================================
@@ -407,8 +458,37 @@ hr {
     }
 }
 
+.container {
+    margin-top: 100px;
+    width: 1800px;
+}
+
 /* Dávid */
+
+.bg {
+    background-color: #fff;
+}
+
+.form-select {
+    width: 150px;
+}
+
+.cart {
+    width: 50px;
+    height: 40px;
+    background-color: #fff;
+    float: right;
+    margin-top: -38px;
+}
+
+.card img {
+    height: 100%;
+}
+
+
 /* Csirkemell */
+
+
 
 .mezes_mustaros {
     width: 1000px;
@@ -518,6 +598,7 @@ hr {
 
 .elkeszites_bold  {
     font-weight: bold;
+    color: #075018;
 }
 
 /* Mogyorós Sütemény Elkészítés */
@@ -739,6 +820,7 @@ hr {
 
 /* Footer */
 footer {
+    margin-top: 70px;
     text-align: center;
     padding: 2rem 1rem;
     color: #777;
@@ -762,4 +844,193 @@ footer {
 .napok{
     list-style-type: none;
     font-size: 2rem;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+
+    .mezes_mustaros,
+    .big_mac_salata {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .mogyoros_sutemeny {
+        width: 100%;
+    }
+
+    .mezes_title,
+    .mogyoros_title,
+    .salata_title {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .mezes_mustar,
+    .big_mac {
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .mezes_hozzavalok_move,
+    .salata_hozzavalok_move,
+    .mogyoros_hozzavalok_move {
+        margin: 20px auto;
+        position: static;
+    }
+
+    .hozzavalok,
+    .salata_hozzavalok,
+    .mogyoros_hozzavalok {
+        margin: auto;
+    }
+
+    .mezes_mustaros_move,
+    .big_mac_salata_move {
+        margin: 20px auto;
+        position: static;
+    }
+
+    .elkeszites,
+    .salata_elkeszites,
+    .mogyoros_elkeszites {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .mezes_mustaros_box,
+    .big_mac_salata_box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .mezes_mustaros,
+    .big_mac_salata {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .mezes_title,
+    .mogyoros_title,
+    .salata_title {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .mezes_title2,
+    .mogyoros_title2,
+    .salata_title2 {
+        font-size: 18px;
+    }
+
+    .mezes_mustar,
+    .big_mac {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .mezes_mustaros_img,
+    .mogyoros_img,
+    .big_mac_salata_img {
+        width: 90%;
+        height: auto;
+    }
+
+    .mezes_hozzavalok_move,
+    .salata_hozzavalok_move,
+    .mogyoros_hozzavalok_move {
+        margin: 20px auto;
+    }
+
+    .hozzavalok,
+    .salata_hozzavalok,
+    .mogyoros_hozzavalok {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .hozzavalok_box,
+    .mogyoros_hozzavalok_box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mezes_mustaros_move,
+    .big_mac_salata_move {
+        margin: 20px auto;
+    }
+
+    .elkeszites,
+    .salata_elkeszites,
+    .mogyoros_elkeszites {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .mezes_mustaros_box,
+    .big_mac_salata_box,
+    .mogyoros_sutemeny_box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hozzavalok_text,
+    .elkeszites_text {
+        font-size: 18px;
+    }
+
+    p, li {
+        font-size: 13px;
+    }
 }
