@@ -24,3 +24,4 @@ Rólam oldal képek: Géza rokonja
 Főoldal képek: ChatGPT
 
 Termékek oldal képek: [BioTechUSA](https://biotechusa.hu/)
+
