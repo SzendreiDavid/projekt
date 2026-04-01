@@ -13,20 +13,19 @@
 <div class="mainpict">
 
     </div>
-    <div class="header links">
-        <h3>
+    <div class="header">
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="links" id="navLinks">
             <a href="index.html">Főoldal</a>
-            <span class="header-sep">|</span>
             <a href="Rólam.html">Rólam</a>
-            <span class="header-sep">|</span>
             <a href="Idopontok.html">Időpontfoglaló</a>
-            <span class="header-sep">|</span>
             <a href="Edzéstervek.html">Edzéstervek</a>
-            <span class="header-sep">|</span>
             <a href="Receptek.html">Receptek</a>
-            <span class="header-sep">|</span>
             <a href="Termékek.html">Termékek</a>
-        </h3>
+        </div>
+
     </div>
 
     <header class="hero-split">
@@ -171,6 +170,12 @@
     <footer class="text-center py-4 border-top">
         <p class="text-muted small">&copy; 2024 Mell Edzés Program - Erő és Esztétika.</p>
     </footer>
+
+        <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

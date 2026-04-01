@@ -463,10 +463,22 @@ hr {
     margin: auto;
 }
 
+.text {
+    margin-top: 100px;
+}
+
 /* Dávid */
 
+.align {
+    margin-top: 100px;
+}
+
 .bg {
-    background-color: #fff;
+    background-color: #E8C9B2;
+}
+
+.bg2 {
+    background-color: #F9DCC3;
 }
 
 .form-select {
