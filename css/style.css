@@ -89,7 +89,8 @@ main {
     line-height: 1.7;
     margin-bottom: 2rem;
     text-align: justify;
-    color: white;
+    color: black;
+    font-size: 20px;
 }
 
 /* ==========================================================================
@@ -145,7 +146,7 @@ main {
    ========================================================================== */
 .motivation-box {
     background: #9d9f7b;
-    border-left: 5px solid #2e7d32;
+    border-left: 5px solid #9d9f7b;
     border-radius: 12px;
     padding: 30px;
     text-align: center;
@@ -230,7 +231,9 @@ main {
     display: flex;
     align-items: center;
 }
-
+.hero-text{
+    font-size: 20px;
+}
 /* ==========================================================================
    BADGE + BUTTON
    ========================================================================== */
@@ -244,8 +247,8 @@ main {
 
 .btn-main {
     display: inline-block;
-    background: #ffd700;
-    color: #065f46;
+    color: black;
+    background-color: #e5d9cd;
     padding: 12px 30px;
     border-radius: 50px;
     text-decoration: none;
@@ -272,6 +275,8 @@ main {
 }
 
 .section-subtitle {
+    font-size: large;
+    color: black;
     max-width: 700px;
     margin: 0 auto 3rem;
 }
